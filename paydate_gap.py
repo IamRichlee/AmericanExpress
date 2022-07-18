@@ -1,7 +1,7 @@
 """
 - feature 경로 : G:\공유 드라이브\BRIQUE\(B)과제\(BB)내부\기타\BI-Y20-DS-005-1 TraceDataAnalysis\03.분석\feature_store
 - feature 명: paydate_gap.parquet
-- 용량 : MB
+- 용량 : 27MB
 - 설명 : 각 명세서 월을 int변환 (시작월 : 0 ~)
         -> 변환 후 first, last, period(max - min), count 산출
         -> 고객이 명세서를 발행받기 시작한 첫 달부터 마지막 달까지 빠지는 달이 있는지를 gap으로 산출. 있으면 1, 없으면 0.
