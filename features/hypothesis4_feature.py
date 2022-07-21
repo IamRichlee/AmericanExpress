@@ -27,7 +27,7 @@ def hex_to_int_customer_ID(df):
     return df
 
 
-def feature_engineer(df):
+def get_hypothesis4_feature(df):
     df.S_2 = pd.to_datetime(df.S_2)
     cat_features = ["B_30", "B_38", "D_114", "D_116", "D_117", "D_120", "D_126", "D_63", "D_64", "D_66", "D_68"]
 
@@ -171,7 +171,7 @@ if __name__ == "__main__":
     #######################################################
     # 작업 코드
     data = hex_to_int_customer_ID(data)
-    train = feature_engineer(data)
+    train = get_hypothesis4_feature(data)
     #######################################################
     print("feature_engineer time :", time.time() - start)  # 현재시각 - 시작시간 = 실행 시간 ; feature_engineer time : 1798.0522730350494
 
